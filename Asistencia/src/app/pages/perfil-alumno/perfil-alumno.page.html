@@ -1,9 +1,37 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="warning">
     <ion-title>perfilAlumno</ion-title>
+    <ion-buttons slot="start" class="conteiner--btn">
+      <ion-menu-button color="dark"></ion-menu-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div class="contenido--container">
+    
 
+    <div class="usuario--container">
+      <div class="primer--container">
+        <ion-label class="bienvenido">Bienvenido</ion-label>
+        <ion-label class="nombre">Benjamin Vidal</ion-label>
+      </div>
+      <div class="usuario--volver" [style.backgroundImage]="'url(assets/icon/favicon.png)'"></div>
+    </div>
+
+    <div class="contenido--div animated bounceInUp">
+      <ion-label class="hola--label">Glibert</ion-label>
+
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="6" (click)="goToSubject()" *ngFor="let item of subjects">
+            <div class="col--div">
+              <img src="{{item.img}}">
+              <ion-label>{{item.name}}</ion-label>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
 </ion-content>
