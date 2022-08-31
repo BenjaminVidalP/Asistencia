@@ -9,7 +9,7 @@ import { MenuController } from '@ionic/angular';
 export class HomePage {
 
   constructor(private menu: MenuController) {
-    this.menu.enable(true);
+    this.menu.enable(false);
 
   }
 
