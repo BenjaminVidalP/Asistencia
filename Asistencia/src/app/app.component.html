@@ -8,10 +8,10 @@
       </ion-header>
       <ion-content>
         <ion-list class="menu-header-color">
-          <ion-item class="menu-items" [routerLink]="['/recuperacion-clave']">
+          <ion-item class="menu-items" [routerLink]="['/']">
             <ion-icon name="person-circle-outline"></ion-icon>
             Perfil</ion-item>
-          <ion-item [routerLink]="['/home']">
+          <ion-item [routerLink]="['/']">
             <ion-icon name="log-out-outline"></ion-icon>
           Cerrar Sesion</ion-item>
 
@@ -19,5 +19,5 @@
       </ion-content>
     </ion-menu>
   </ion-menu-toggle>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
