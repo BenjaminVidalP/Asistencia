@@ -1,9 +1,21 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>registrarse</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content >
+  <div class="header">
+    <h3>Feliz de verte denuevo</h3>
+    <h1>Crear una<br>Nueva cuenta</h1>
+  </div>
+  
+  <div class="form">
+    <ion-input type="email" placeholder="Email" value="Benja@gmail.com"></ion-input>
+    <ion-input type="password" placeholder="Contraseña"></ion-input>
+  </div>
 
-<ion-content>
+  <div class="button registrarse">
+    Registrarse <ion-icon name="chevron-forward-outline"></ion-icon>
+  </div>
+
+  <div class="footer registrarse-footer">
+    <h3 [routerLink]="['/login']">Ya tienes una cuenta? <span>Ingresar</span></h3>
+  </div>
+
 
 </ion-content>
