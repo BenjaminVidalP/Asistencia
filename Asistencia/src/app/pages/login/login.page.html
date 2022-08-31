@@ -1,18 +1,17 @@
 
 <ion-content>
   <div class="header">
-    <h3>Bienvenido Denuevo, <span id="user-name">Benja</span></h3>
+    <h3>Bienvenido</h3>
     <h1>Iniciar sesion<br>para continuar</h1>
   </div>
   
   <div class="form">
-    <ion-input type="email" placeholder="Email" value="Benja@gmail.com"></ion-input>
+    <ion-input type="email" placeholder="Email" ></ion-input>
     <ion-input type="password" placeholder="Contraseña"></ion-input>
   </div>
 
-  <div class="button">
-    Ingresar <ion-icon name="chevron-forward-outline"></ion-icon>
-  </div>
+  <ion-button expand="block" color="warning" [routerLink]="['/perfil-alumno']"
+   >Iniciar</ion-button>
 
   <div class="footer">
     <h3 [routerLink]="['/registrarse']">No tienes una cuenta? <span>Crea una</span></h3>

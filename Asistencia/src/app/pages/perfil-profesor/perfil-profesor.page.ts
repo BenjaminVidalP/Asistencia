@@ -3,7 +3,7 @@ import { Router, NavigationExtras } from '@angular/router';
 @Component({
   selector: 'app-perfil-profesor',
   templateUrl: './perfil-profesor.page.html',
-  styleUrls: ['./perfil-profesor.page.scss'],
+  styleUrls: ['../perfil-alumno/perfil-alumno.page.scss'],
 })
 export class PerfilProfesorPage implements OnInit {
 subjects;

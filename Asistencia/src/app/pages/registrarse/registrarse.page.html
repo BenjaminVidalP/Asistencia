@@ -5,13 +5,12 @@
   </div>
   
   <div class="form">
-    <ion-input type="email" placeholder="Email" value="Benja@gmail.com"></ion-input>
+    <ion-input type="email" placeholder="Email" ></ion-input>
+    <ion-input type="text" placeholder="Usuario"></ion-input>
     <ion-input type="password" placeholder="Contraseña"></ion-input>
   </div>
 
-  <div class="button registrarse">
-    Registrarse <ion-icon name="chevron-forward-outline"></ion-icon>
-  </div>
+  <ion-button expand="block" color="warning">Registrarse</ion-button>
 
   <div class="footer registrarse-footer">
     <h3 [routerLink]="['/login']">Ya tienes una cuenta? <span>Ingresar</span></h3>

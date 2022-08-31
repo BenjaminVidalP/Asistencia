@@ -6,23 +6,8 @@
 <ion-content class="ion-padding">
   <div id="container">
     <h2 class="letras">¡Bienvenidos!</h2>
-    <ion-item >
-      <ion-label  position="floating" class="labels">
-        <ion-icon name="person-outline"></ion-icon>Usuario</ion-label>
-      <ion-input ></ion-input>
-    </ion-item>
-
-    <ion-item >
-      <ion-label position="floating" class="labels">
-        <ion-icon name="key-outline"></ion-icon>Clave</ion-label>
-      <ion-input type="password"> </ion-input>
-    </ion-item>
-    <ion-button  color="warning" [routerLink]="['/login']" expand="block">Ingresar</ion-button>
-
-
-
-    <ion-router-link href="/perfil-alumno" class="underline">Olvide mi clave de acceso</ion-router-link>
-
+    
+    <button mat-raised-button color="warning" [routerLink]="['/login']">Acceder</button> 
 
   </div>
 
