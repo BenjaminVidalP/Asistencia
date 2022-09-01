@@ -24,9 +24,9 @@
       <ion-item appearance="fill">
         <ion-label class="label--color" position="floating" class="label--color">Contraseña</ion-label>
       <ion-input class="input--color" type="password" name="password"  [(ngModel)]="usuario.password" 
-        required matInput [type]="hide ? 'password' : 'text'"></ion-input><div class="icono--a"> <button class="icono--a" (click)="hide = !hide" [attr.aria-label]=" 'Hide password' " [attr.aria-pressed]="hide">
+        required matInput [type]="hide ? 'password' : 'text'"><button class="icono--a" (click)="hide = !hide" [attr.aria-label]=" 'Hide password' " [attr.aria-pressed]="hide">
           <ion-icon name="eye-outline">{{hide ? 'visibility_off' : 'visibility'}}</ion-icon>
-        </button></div>
+        </button></ion-input>
       </ion-item>
     </ion-list>
 <ion-row>

@@ -2,7 +2,9 @@
     align-items: center;
     display: flex;
     justify-content: center;
-
+    max-width: 320px;
+    max-height: 249px;
+    margin-top: 50px;
 }
 
 th:nth-child(even){
