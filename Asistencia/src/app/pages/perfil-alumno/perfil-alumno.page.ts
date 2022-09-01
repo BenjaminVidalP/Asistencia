@@ -15,20 +15,20 @@ subjects;
   ngOnInit() {
     this.subjects = [
       {
-        img: 'assets/image',
-        name: 'English'
+        img: 'assets/qr-scanner.jpg',
+        name: 'Escanear QR'
       },
       {
-        img: 'assets/image',
-        name: 'English'
+        img: 'assets/asistencia.webp',
+        name: 'Asistencia'
       },
       {
-        img: 'assets/image',
-        name: 'English'
+        img: 'assets/asignaturas.png',
+        name: 'Asignaturas'
       },
       {
-        img: 'assets/image',
-        name: 'English'
+        img: 'assets/horario-1.png',
+        name: 'Horario'
       },
     ]
   }
