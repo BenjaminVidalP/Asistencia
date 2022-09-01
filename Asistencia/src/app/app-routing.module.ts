@@ -26,6 +26,10 @@ const routes: Routes = [
     path: 'perfil-profesor',
     loadChildren: () => import('./pages/perfil-profesor/perfil-profesor.module').then( m => m.PerfilProfesorPageModule)
   },
+  {
+    path: 'camara',
+    loadChildren: () => import('./pages/camara/camara.module').then( m => m.CamaraPageModule)
+  },
 
 ];
 
