@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar color="warning">
-    <ion-title>perfilAlumno</ion-title>
+    <ion-title>Profesor</ion-title>
     <ion-buttons slot="start" class="conteiner--btn">
       <ion-menu-button color="dark"></ion-menu-button>
     </ion-buttons>
@@ -13,10 +13,10 @@
 
     <div class="usuario--container">
       <div class="primer--container">
-        <ion-label class="bienvenido">Bienvenido</ion-label>
-        <ion-label class="nombre">Benjamin Vidal</ion-label>
+        <ion-label class="bienvenido">Victor Rosendo</ion-label>
+        <ion-label class="nombre">Profesor</ion-label>
       </div>
-      <div class="usuario--volver" [style.backgroundImage]="'url(assets/icon/favicon.png)'"></div>
+      <div class="usuario--volver" [style.backgroundImage]="'url(assets/icon/aasss.webp)'"></div>
     </div>
 
     <div class="contenido--div animated bounceInUp">
@@ -24,10 +24,30 @@
 
       <ion-grid fixed>
         <ion-row>
-          <ion-col size="6" (click)="goToSubject()" *ngFor="let item of subjects">
+          <ion-col size="6" [routerLink]="['/codigoqr']">
             <div class="col--div">
-              <img src="{{item.img}}">
-              <ion-label>{{item.name}}</ion-label>
+              <img src="assets/qr-scanner.jpg">
+              <ion-label>Generar Qr</ion-label>
+            </div>
+          </ion-col>
+          <ion-col size="6" [routerLink]="['/perfil-profesor']">
+            <div class="col--div">
+              <img src="assets/asistencia.webp">
+              <ion-label>Lista</ion-label>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6" [routerLink]="['/camara']">
+            <div class="col--div">
+              <img src="assets/asignaturas.png">
+              <ion-label>Asignaturas</ion-label>
+            </div>
+          </ion-col>
+          <ion-col size="6" [routerLink]="['/perfil-profesor']">
+            <div class="col--div">
+              <img src="assets/horario-1.png">
+              <ion-label>Horario</ion-label>
             </div>
           </ion-col>
         </ion-row>

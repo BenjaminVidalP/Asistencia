@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, NavigationExtras } from '@angular/router';
+
 @Component({
   selector: 'app-perfil-profesor',
   templateUrl: './perfil-profesor.page.html',
@@ -7,27 +7,9 @@ import { Router, NavigationExtras } from '@angular/router';
 })
 export class PerfilProfesorPage implements OnInit {
 subjects;
-  constructor(private router: Router) { }
+  constructor() { }
 
   ngOnInit() {
-    this.subjects = [
-      {
-        img: 'assets/image',
-        name: 'English'
-      },
-      {
-        img: 'assets/image',
-        name: 'English'
-      },
-      {
-        img: 'assets/image',
-        name: 'English'
-      },
-      {
-        img: 'assets/image',
-        name: 'English'
-      },
-    ]
   }
 
 }
