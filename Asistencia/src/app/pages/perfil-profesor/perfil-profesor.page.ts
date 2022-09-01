@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['../perfil-alumno/perfil-alumno.page.scss'],
 })
 export class PerfilProfesorPage implements OnInit {
-subjects;
+
   constructor() { }
 
   ngOnInit() {
