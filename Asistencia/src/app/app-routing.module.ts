@@ -35,6 +35,18 @@ const routes: Routes = [
     path: 'codigoqr',
     loadChildren: () => import('./pages/codigoqr/codigoqr.module').then( m => m.CodigoqrPageModule)
   },
+  {
+    path: 'asistencia-alumno',
+    loadChildren: () => import('./pages/asistencia-alumno/asistencia-alumno.module').then( m => m.AsistenciaAlumnoPageModule)
+  },
+  {
+    path: 'horario-alumno',
+    loadChildren: () => import('./pages/horario-alumno/horario-alumno.module').then( m => m.HorarioAlumnoPageModule)
+  },
+  {
+    path: 'asignaturas-alumno',
+    loadChildren: () => import('./pages/asignaturas-alumno/asignaturas-alumno.module').then( m => m.AsignaturasAlumnoPageModule)
+  },
 
 
 ];
