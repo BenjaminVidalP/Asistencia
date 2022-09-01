@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-perfil-alumno',
@@ -7,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerfilAlumnoPage implements OnInit {
 
-  constructor() {
-    }
+  constructor(private menu: MenuController) {
+    this.menu.enable(true);}
 
   ngOnInit() {
     }

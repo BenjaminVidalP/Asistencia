@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-registro',
@@ -14,8 +15,10 @@ export class RegistroPage implements OnInit {
 
   };
 
-  constructor() { }
-
+  constructor(private menu: MenuController) { 
+    this.menu.enable(false);
+  }
+  
   ngOnInit() {
   }
 
