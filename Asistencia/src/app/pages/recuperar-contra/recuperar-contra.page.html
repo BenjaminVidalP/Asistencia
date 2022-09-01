@@ -11,16 +11,16 @@
     </div>
   <form>
     <ion-item lines="full">
-      <ion-label position="floating">Email</ion-label>
-      <ion-input type="email" required></ion-input>
+      <ion-label class="label-color" position="floating">Email</ion-label>
+      <ion-input  class="input-color" type="email" required></ion-input>
     </ion-item>
     <ion-row>
       <ion-col>
-        <ion-button type="submit" color="warning" expand="block">Enviar</ion-button>
+        <ion-button color="warning" expand="block"  (click)="presentAlert()">Enviar correo de recuperación</ion-button>
       </ion-col>
     </ion-row>
-    <small>
-      Porfavor introduzca su correo para iniciar sesion
-    </small>
+    
+      <p class="recuFont">Porfavor introduzca su correo para iniciar sesión.</p>
+
   </form>
 </ion-content>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-horario-alumno',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HorarioAlumnoPage implements OnInit {
 
-  constructor() { }
+  constructor(private menu: MenuController) {
+    this.menu.enable(false);
+
+   }
 
   ngOnInit() {
   }
