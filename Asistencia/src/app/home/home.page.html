@@ -1,23 +1,27 @@
 <ion-header>
   <ion-toolbar color="warning">
+    <ion-title>
+      Universidad
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
-
+<ion-content class="auth-form">
   <div>
     <img src="/assets/icon/uni2.png" alt="">
   </div>
-  <div id="container">
-    <h2 class="letras">¡Bienvenidos!</h2>
-    
 
-    <ion-button color="warning" [routerLink]="['/perfil-profesor']">Warning</ion-button> 
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <ion-button [routerLink]="['/registro']" expand="block" color="warning">Register</ion-button>
 
-    <ion-button color="warning" [routerLink]="['/inicio-sesion']">Warning</ion-button> 
+        <span class="divider line one-line">or</span>
 
-    
-  </div>
+        <span class="already">Already a user?</span>
 
+        <ion-button [routerLink]="['/inicio-sesion']" expand="block" color="warning">Sign In</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
-
