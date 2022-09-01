@@ -1,5 +1,4 @@
 import { Component , OnInit} from '@angular/core';
-import { Router } from '@angular/router';
 import { MenuController } from '@ionic/angular';
 
 @Component({
@@ -9,7 +8,7 @@ import { MenuController } from '@ionic/angular';
 })
 export class HomePage {
 
-  constructor(private menu: MenuController,private router: Router) {
+  constructor(private menu: MenuController) {
     this.menu.enable(false);
 
   }
@@ -17,10 +16,7 @@ export class HomePage {
   ngOnInit(){
 
   }
-    goToRegistro(){
-      this.router.navigate(['/registro'])
 
-    }
   
 
 }

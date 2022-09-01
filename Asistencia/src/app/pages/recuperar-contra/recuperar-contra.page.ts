@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuController } from '@ionic/angular';
+import { AlertController, MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-recuperar-contra',
@@ -8,9 +8,21 @@ import { MenuController } from '@ionic/angular';
 })
 export class RecuperarContraPage implements OnInit {
 
-  constructor(private menu: MenuController) {
+  constructor(private menu: MenuController,private alertController: AlertController) {
     this.menu.enable(false)
     }
+
+    async presentAlert(){
+      const alert = await this.alertController.create({
+        header: 'Mensaje',
+        subHeader: 'Recuperar contraseña',
+        message: 'Se ha enviado un correo para restablecer su contraseña',
+        buttons: ['OK'],
+      
+    });
+
+    await alert.present();
+  }
 
   ngOnInit() {
   }
