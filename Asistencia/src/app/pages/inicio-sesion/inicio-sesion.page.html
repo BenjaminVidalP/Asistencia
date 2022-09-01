@@ -3,6 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
+    <ion-title>Iniciar Sesion</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -27,12 +28,13 @@
         required ></ion-input>
       </ion-item>
     </ion-list>
-
-    <ion-button expand="full" type="submit"
+<ion-row>
+  <ion-col>
+    <ion-button expand="block" type="submit" color="warning"
     [disabled]="formulario.invalid" color="warning" [routerLink]="['/perfil-alumno']">Enviar</ion-button>
-    <a [routerLink]="['/recuperar-contra']" class="small-text">Forgot Password?</a>
-    
-
+    <a [routerLink]="['/recuperar-contra']" class="medium-text">Ha olvidado su contraseña?</a>
+  </ion-col>
+</ion-row>
   </form>
 
 

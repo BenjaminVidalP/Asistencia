@@ -1,10 +1,17 @@
 <ion-header>
   <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
     <ion-title>Registro</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
+
+  <div>
+    <img src="/assets/icon/uni2.png" alt="">
+  </div>
 
 
   <form #formulario="ngForm" (ngSubmit)="onSubmitTemplate()">
@@ -23,8 +30,8 @@
       </ion-item>
     </ion-list>
 
-    <ion-button expand="full" type="submit"
-    [disabled]="formulario.invalid">Enviar</ion-button>
+    <ion-button expand="block" type="submit"color="warning"
+    [disabled]="formulario.invalid">Registrar</ion-button>
 
   </form>
 

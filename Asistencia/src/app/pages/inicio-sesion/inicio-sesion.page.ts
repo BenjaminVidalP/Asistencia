@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-inicio-sesion',
@@ -16,7 +17,9 @@ usuario={
 
 
 
-  constructor() { }
+  constructor(private menu: MenuController) {
+    this.menu.enable(true);
+   }
 
   ngOnInit() {
   }
