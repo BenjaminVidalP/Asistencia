@@ -47,7 +47,8 @@ const routes: Routes = [
   {
     path: 'asignaturas-alumno',
     loadChildren: () => import('./pages/asignaturas-alumno/asignaturas-alumno.module').then( m => m.AsignaturasAlumnoPageModule)
-  },  {
+  },
+  {
     path: 'lista-alumnos',
     loadChildren: () => import('./pages/lista-alumnos/lista-alumnos.module').then( m => m.ListaAlumnosPageModule)
   },

@@ -18,7 +18,7 @@ usuario={
 
 
   constructor(private menu: MenuController) {
-    this.menu.enable(true);
+    this.menu.enable(false);
    }
 
   ngOnInit() {
