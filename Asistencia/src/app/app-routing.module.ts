@@ -23,7 +23,8 @@ const routes: Routes = [
   {
     path: 'camara',
     loadChildren: () => import('./pages/camara/camara.module').then( m => m.CamaraPageModule)
-  },  {
+  },
+  {
     path: 'inicio-sesion',
     loadChildren: () => import('./pages/inicio-sesion/inicio-sesion.module').then( m => m.InicioSesionPageModule)
   },
@@ -46,7 +47,11 @@ const routes: Routes = [
   {
     path: 'asignaturas-alumno',
     loadChildren: () => import('./pages/asignaturas-alumno/asignaturas-alumno.module').then( m => m.AsignaturasAlumnoPageModule)
+  },  {
+    path: 'lista-alumnos',
+    loadChildren: () => import('./pages/lista-alumnos/lista-alumnos.module').then( m => m.ListaAlumnosPageModule)
   },
+
 
 
 ];
