@@ -22,6 +22,7 @@ export class RegistroPage implements OnInit {
 
   onSubmitTemplate(){
     console.log('Form submit')
+    console.log(this.usuario);
   }
 
 }
