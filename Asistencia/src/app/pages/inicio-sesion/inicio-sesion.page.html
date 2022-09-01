@@ -21,16 +21,18 @@
         required ></ion-input>
       </ion-item>
 
-      <ion-item>
+      <ion-item appearance="fill">
         <ion-label class="label--color" position="floating" class="label--color">Contraseña</ion-label>
       <ion-input class="input--color" type="password" name="password"  [(ngModel)]="usuario.password" 
-        required ></ion-input>
+        required matInput [type]="hide ? 'password' : 'text'"></ion-input><div class="icono--a"> <button class="icono--a" (click)="hide = !hide" [attr.aria-label]=" 'Hide password' " [attr.aria-pressed]="hide">
+          <ion-icon name="eye-outline">{{hide ? 'visibility_off' : 'visibility'}}</ion-icon>
+        </button></div>
       </ion-item>
     </ion-list>
 <ion-row>
   <ion-col>
     <ion-button expand="block" type="submit" color="warning"
-    [disabled]="formulario.invalid" color="warning" [routerLink]="['/perfil-alumno']">Enviar</ion-button>
+    [disabled]="formulario.invalid" color="warning" [routerLink]="['/perfil-profesor']">Enviar</ion-button>
     <div class="texto--link">
     <a class="a--blanco" [routerLink]="['/recuperar-contra']" >Ha olvidado su contraseña?</a>
     </div>

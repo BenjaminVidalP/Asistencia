@@ -2,6 +2,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
+
 }
 
 th:nth-child(even){
@@ -9,7 +10,7 @@ th:nth-child(even){
     border: solid 1px  black
 }
 tr:hover td{
-    background-color: #4112fd;
+    background-color: #4949c5;
 }
 table{
     width: 100px;
@@ -22,9 +23,10 @@ tr, td{
     border: solid 1px  black;
     padding:7px;
 
+
 }
 thead{
     background-color: #ffde59 !important;
     color: #000;
-    border-bottom: solid 4px #4112fd;
+    border-bottom: solid 4px black;
 }

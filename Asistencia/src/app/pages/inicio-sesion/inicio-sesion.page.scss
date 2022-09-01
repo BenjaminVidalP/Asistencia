@@ -13,3 +13,26 @@
 .input--color{
     color: white;
 }
+
+.example-container .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+  
+  .example-right-align {
+    text-align: right;
+  }
+  
+  input.example-right-align::-webkit-outer-spin-button,
+  input.example-right-align::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+  input.example-right-align {
+    -moz-appearance: textfield;
+  }
+
+.icono--a{
+    opacity: 1;
+    justify-content: end;
+    background-color: transparent;
+}

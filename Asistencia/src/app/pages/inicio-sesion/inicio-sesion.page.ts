@@ -7,7 +7,7 @@ import { MenuController } from '@ionic/angular';
   styleUrls: ['./inicio-sesion.page.scss'],
 })
 export class InicioSesionPage implements OnInit {
-
+  hide = true;
 nombre: string;
 
 usuario={
