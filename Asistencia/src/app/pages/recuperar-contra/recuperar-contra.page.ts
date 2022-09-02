@@ -8,8 +8,7 @@ import { AlertController, MenuController } from '@ionic/angular';
 })
 export class RecuperarContraPage implements OnInit {
 
-  constructor(private menu: MenuController,private alertController: AlertController) {
-    this.menu.enable(false)
+  constructor(private alertController: AlertController) {
     }
 
     async presentAlert(){

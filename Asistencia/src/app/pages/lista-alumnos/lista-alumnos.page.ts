@@ -9,7 +9,7 @@ import { MenuController } from '@ionic/angular';
 export class ListaAlumnosPage implements OnInit {
 
   constructor(private menu: MenuController) { 
-    this.menu.enable(false);
+    this.menu.enable(true);
   }
 
   ngOnInit() {

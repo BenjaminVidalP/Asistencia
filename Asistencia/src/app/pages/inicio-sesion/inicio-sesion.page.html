@@ -15,18 +15,20 @@
 
   <form #formulario="ngForm" (ngSubmit)="onSubmitTemplate()">
     <ion-list>
-      <ion-item>
+      <ion-item class="item--ancho">
         <ion-label class="label--color" position="floating" >Email</ion-label>
       <ion-input class="input--color" type="email" name="email" pattern="^([a-zA-Z0-9_\-\.]+)@([A-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" [(ngModel)]="usuario.email" 
         required ></ion-input>
       </ion-item>
 
-      <ion-item appearance="fill">
+      <ion-item class="item--ancho" appearance="fill">
         <ion-label class="label--color" position="floating" class="label--color">Contraseña</ion-label>
-      <ion-input class="input--color" type="password" name="password"  [(ngModel)]="usuario.password" 
-        required matInput [type]="hide ? 'password' : 'text'"><button class="icono--a" (click)="hide = !hide" [attr.aria-label]=" 'Hide password' " [attr.aria-pressed]="hide">
-          <ion-icon name="eye-outline">{{hide ? 'visibility_off' : 'visibility'}}</ion-icon>
-        </button></ion-input>
+        <div class="icono--a">
+        <ion-input class="input--color" type="password" name="password"  [(ngModel)]="usuario.password" 
+        required matInput [type]="hide ? 'password' : 'text'"></ion-input><button class="icono--a" (click)="hide = !hide" [attr.aria-label]=" 'Hide password' " [attr.aria-pressed]="hide">
+          <ion-icon class="icono--tamano" name="eye-outline">{{hide ? 'visibility_off' : 'visibility'}}</ion-icon>
+        </button>
+        </div>
       </ion-item>
     </ion-list>
 <ion-row>

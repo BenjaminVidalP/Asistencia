@@ -12,6 +12,7 @@
 }
 .input--color{
     color: white;
+    
 }
 
 .example-container .mat-form-field + .mat-form-field {
@@ -32,6 +33,14 @@
   }
 
 .icono--a{
-    opacity: 1;
+    display: inline-flex;
+    align-items: baseline;
+    box-sizing: border-box;
     background-color: transparent;
+    color: white;
+
+}
+
+.item--ancho{
+    width: 220px;
 }
