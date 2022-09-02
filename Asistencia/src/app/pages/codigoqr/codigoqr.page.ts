@@ -9,7 +9,7 @@ import { MenuController } from '@ionic/angular';
 export class CodigoqrPage implements OnInit {
 
   constructor(private menu: MenuController) {
-    this.menu.enable(true);
+    this.menu.enable(false);
    }
 
   ngOnInit() {

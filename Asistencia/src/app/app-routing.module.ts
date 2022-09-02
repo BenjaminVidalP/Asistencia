@@ -59,6 +59,10 @@ const routes: Routes = [
     path: 'seccion',
     loadChildren: () => import('./pages/seccion/seccion.module').then( m => m.SeccionPageModule)
   },
+  {
+    path: 'horario-asig',
+    loadChildren: () => import('./pages/horario-asig/horario-asig.module').then( m => m.HorarioAsigPageModule)
+  },
 
 
 

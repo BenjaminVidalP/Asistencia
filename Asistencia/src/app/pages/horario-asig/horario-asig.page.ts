@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { MenuController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-seccion',
-  templateUrl: './seccion.page.html',
-  styleUrls: ['./seccion.page.scss'],
+  selector: 'app-horario-asig',
+  templateUrl: './horario-asig.page.html',
+  styleUrls: ['./horario-asig.page.scss'],
 })
-export class SeccionPage implements OnInit {
+export class HorarioAsigPage implements OnInit {
 
   constructor(private menu: MenuController) {
     this.menu.enable(false);
