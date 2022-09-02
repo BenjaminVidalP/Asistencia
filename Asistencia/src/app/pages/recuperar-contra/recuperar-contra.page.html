@@ -12,7 +12,7 @@
   <form>
     <ion-item lines="full">
       <ion-label class="label-color" position="floating">Email</ion-label>
-      <ion-input  class="input-color" type="email" required></ion-input>
+      <ion-input  class="input-color" type="email"  pattern="^([a-zA-Z0-9_\-\.]+)@([A-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required></ion-input>
     </ion-item>
     <ion-row>
       <ion-col>
@@ -20,7 +20,7 @@
       </ion-col>
     </ion-row>
     
-      <p class="recuFont">Porfavor introduzca su correo para iniciar sesión.</p>
+      <p class="recuFont">Porfavor introduzca su correo.</p>
 
   </form>
 </ion-content>
