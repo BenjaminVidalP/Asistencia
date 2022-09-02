@@ -5,26 +5,26 @@
     max-width: 320px;
     max-height: 249px;
     margin-top: 50px;
+
 }
 
 th:nth-child(even){
-    padding:7px;
+    padding: 1px;
     border: solid 1px  black
 }
 tr:hover td{
     background-color: #4949c5;
 }
 table{
-    width: 100px;
     background: white;
     border-collapse: collapse;
     text-align: center;
-    
+    width: 95%;
 }
 tr, td{
     border: solid 1px  black;
-    padding:7px;
-
+    padding: 5px;
+    font-size: 11px;
 
 }
 thead{
@@ -35,4 +35,10 @@ thead{
 
 .centrado--texto{
     text-align: center;
+}
+
+.tamano{
+    font-size: 10px;
+    padding: 2px !important;
+    width: 100%;
 }
