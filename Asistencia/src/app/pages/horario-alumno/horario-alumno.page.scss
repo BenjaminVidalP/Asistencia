@@ -12,9 +12,7 @@ th:nth-child(even){
     padding: 1px;
     border: solid 1px  black
 }
-tr:hover td{
-    background-color: #4949c5;
-}
+
 table{
     background: white;
     border-collapse: collapse;
@@ -23,7 +21,7 @@ table{
 }
 tr, td{
     border: solid 1px  black;
-    padding: 5px;
+    padding: 4px;
     font-size: 11px;
 
 }
@@ -40,5 +38,5 @@ thead{
 .tamano{
     font-size: 10px;
     padding: 2px !important;
-    width: 100%;
+    
 }
