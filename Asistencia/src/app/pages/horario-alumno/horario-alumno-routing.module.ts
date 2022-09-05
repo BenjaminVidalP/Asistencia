@@ -1,12 +1,28 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
+import { HaLunesComponent } from 'src/app/components/ha-lunes/ha-lunes.component';
+import { HaMartesComponent } from 'src/app/components/ha-martes/ha-martes.component';
+import { HaMiercolesComponent } from 'src/app/components/ha-miercoles/ha-miercoles.component';
 import { HorarioAlumnoPage } from './horario-alumno.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: HorarioAlumnoPage
+    component: HorarioAlumnoPage,
+    children: [
+      {
+        path: 'diaLunes',
+        component: HaLunesComponent
+      },
+      {
+        path:'diaMartes',
+        component: HaMartesComponent
+      },
+      {
+        path:'diaMiercoles',
+        component: HaMiercolesComponent
+      }
+    ]
   }
 ];
 

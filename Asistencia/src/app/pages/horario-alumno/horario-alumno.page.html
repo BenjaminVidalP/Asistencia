@@ -4,44 +4,26 @@
     <ion-buttons slot="start" class="conteiner--btn">
       <ion-menu-button color="dark"></ion-menu-button>
     </ion-buttons>
-    <ion-buttons slot="end">
+    <ion-buttons slot="start">
       <ion-back-button color="dark"></ion-back-button>
     </ion-buttons>
+  </ion-toolbar>
+
+  <ion-toolbar color="warning">
+    <ion-segment value="diaLunes" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="diaLunes">L
+        <ion-icon name="calendar-outline"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="diaMartes">M
+        <ion-icon name="calendar-outline"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="diaMiercoles">M
+        <ion-icon name="calendar-outline"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div>
-    <ion-card>
-      <ion-card-header color=warning>
-      <ion-card-subtitle class="centrado--texto">Horario</ion-card-subtitle>
-      <ion-card-title class="centrado--texto"></ion-card-title>
-      </ion-card-header>
-    </ion-card>
-  </div>
-  <div class="tabla">
-  <table>
-    <thead color="warning">
-      <tr>
-        <th>Lunes</th>Martes<th>Miercoles</th>Jueves<th>Viernes</th>
-      </tr>
-      
-    </thead>
-    <tbody>
-      <tr>
-        <td class="tamano">Mobile</td><td>Mobile</td><td>Mobile</td><td> Mobile</td><td>Mobile</td>
-      </tr>
-      <tr>
-        <td class="tamano">Arquitectura</td>Arquitectura<td>Arquitectura</td><td>Arquitectura</td><td>Arquitectura</td>
-      </tr>
-      <tr>
-        <td class="tamano">Estadistica</td><td>Estadistica</td><td>Estadistica</td>Estadistica<td> Estadistica</td>
-      </tr>
-      <tr>
-        <td class="tamano">Software</td><td>Software</td><td>Software</td><td> Software</td><td>Software</td>
-      </tr>
-      
-    </tbody>
-  </table>
-  </div>
+  <ion-router-outlet></ion-router-outlet>
 </ion-content>

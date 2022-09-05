@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { MenuController } from '@ionic/angular';
 
 @Component({
@@ -8,9 +9,16 @@ import { MenuController } from '@ionic/angular';
 })
 export class HorarioAlumnoPage implements OnInit {
 
-  constructor(private menu: MenuController) {
-    this.menu.enable(true);
+  constructor(private menu: MenuController, private router: Router) {
+    this.menu.enable(false);
+    this.router.navigate(['horario-alumno/diaLunes']);
 
+   }
+
+   segmentChanged($event){
+    let direccion = $event.detail.value;
+    console.log(direccion);
+    this.router.navigate(['horario-alumno/' + direccion]);
    }
 
   ngOnInit() {
