@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Asistencia",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
